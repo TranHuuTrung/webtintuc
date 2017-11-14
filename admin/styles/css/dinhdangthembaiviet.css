@@ -1,0 +1,9 @@
+h3{
+	color: red;
+}
+#wrapper_qlithanhvien{
+	background-size: cover;
+	background-image: url(http://localhost/webtintuc/admin/styles/image/background_maugo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}

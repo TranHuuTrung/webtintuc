@@ -1,0 +1,78 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*khai báo các thuộc tính như background, kích thước chữ loại chữ dùng trong tang ..*/
+body{
+	width: 1200px;
+	line-height: 1.5em;
+	margin: 0px auto;
+	/*background: url(styles\image\sea.jpg);*/
+	background-size: cover;
+	background-image: url(http://localhost/webtintuc/styles/image/sea.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+}
+
+/*css cho phần header*/
+#header{
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+	background: url(http://localhost/webtintuc/styles/image/background_sky.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*css cho phần giữa */
+#wrapper{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+
+}
+
+#main_content{
+	/*background: url(http://localhost/webtintuc/styles/image/background_maugo.jpg);*/
+	padding-bottom: 100020px;/*số 20 để cách bên dưới phần footer*/
+	margin-bottom: -100000px;
+	float: left;
+	width: 860px;
+	padding-top: 40px;
+	padding-right: 30px;
+	padding-left: 30px; 
+}
+
+/*css cho phần thnah bên phải*/
+#nav_right{
+	padding-bottom: 100020px;
+	margin-bottom: -100000px;
+	float: left;
+	width: 250px;
+	padding-right: 15px;
+	padding-left: 15px; 
+	padding-top: 40px;
+	background: #dff134;
+}
+#nav_right ul{
+	list-style: none; /* bỏ các dấu chấm tròn bên trước*/
+}
+#nav_right ul a{
+	text-decoration: none; /* bỏ gạch dưới chân*/
+}
+/*end css cho thah bên phải*/
+
+/*end css cho phần giữa*/
+
+/*css cho phần footer*/
+#footer{
+	width: 100%;
+	clear: left;
+	/*height: 50px;*/
+	text-align: center;
+	padding: 10px 0;
+	background: #32ab45;
+}

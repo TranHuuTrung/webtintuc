@@ -1,0 +1,39 @@
+#form_dang_ki{
+	width: 300px;
+	margin: 0px auto;
+	border: 1px solid blue;
+}
+#wraper_dangki_dangnhap{
+	height: 410px;
+	background-size: cover;
+	background-image: url(http://localhost/webtintuc/admin/styles/image/background_maugo.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+}
+#wraper_dangki_dangnhap p{
+	color: #3883de;
+	font-size: 20px;
+}
+#wraper_dangki_dangnhap h3{
+	color: blue;
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+#table_dangki, #table_dangnhap{
+	padding-top: 100px; 
+}
+.border_btn{
+	background: #3883de;
+	border-radius: 10px;
+	padding: 5px;
+	color: white;
+}
+.input_infomation{
+	text-align: center;
+	height: 25px;
+	font-size: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background: #ffffff;
+	border-radius: 5px;
+}

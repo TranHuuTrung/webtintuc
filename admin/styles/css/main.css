@@ -1,0 +1,195 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*khai báo các thuộc tính như background, kích thước chữ loại chữ dùng trong tang ..*/
+body{
+	width: 1200px;
+	line-height: 1.5em;
+	margin: 0px auto;
+	background-size: cover;
+	background-image: url(http://localhost/webtintuc/styles/image/sea.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+	/*background-image: url("tên file ảnh backround");*/
+    /*background-repeat: no-repeat;
+    background-attachment: fixed; */ 
+}
+
+/*css cho phần header*/
+#header{
+	background: #3883de;
+	height: 100px;
+	width: 100%;
+	text-align: center;
+	padding-top: 100px;
+	background: url(http://localhost/webtintuc/styles/image/background_sky.jpg);
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*css cho phần giữa của main_of_admin */
+#wrapper_main_in_admin{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+
+}
+
+/*css cho phần giữa của them bai viet */
+#wrapper_them_bai_viet{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+
+}
+
+#wrapper_them_bai_viet h3{
+	color: blue;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+#wrapper_them_bai_viet p{
+	color: #3883de;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+
+/*end css cho phần giữa của thêm bai viet*/
+
+/*css cho phần giữa của trang display content */
+#wrapper_display{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+
+}
+/*end css cho trang display*/
+
+
+/*css cho phần giữa của trang quan li thnah vien */
+#wrapper_qlithanhvien{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+
+}
+
+#wrapper_qlithanhvien p{
+	color: blue;
+	margin-bottom: 5px;
+	font-size: 25px;
+
+}
+/*end css cho trang quan li thnah vien */
+
+
+/*css cho phần giữa của trang them thanh vien */
+#wrapper_themthanhvien{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+
+}
+
+#wrapper_themthanhvien #main_content h3{
+	color: blue;
+	margin-bottom: 5px;
+	font-size: 25px;
+
+}
+#wrapper_themthanhvien #main_content p{
+	color: #3883de;
+	margin-bottom: 5px;
+	font-size: 20px;
+
+}
+#wrapper_themthanhvien #main_content a{
+	color: orange;
+}
+/*end css cho trang them thanh vien */
+
+
+/*css cho phần giữa của trang sửa thành viên */
+#wrapper_suathanhvien{
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+
+}
+#wrapper_suathanhvien #main_content h3{
+	color: blue;
+	font-size: 25px;
+	margin-bottom: 20px;
+}
+#wrapper_suathanhvien #main_content p{
+	color: #3883de;
+	font-size: 20px;
+}
+#wrapper_suathanhvien #main_content a{
+	color: orange;
+}
+
+/*end css cho phần sửa thông tin thành viên*/
+
+#main_content{
+	padding-bottom: 100020px;
+	margin-bottom: -100000px;
+	float: left;
+	width: 860px;
+	padding-top: 40px;
+	padding-right: 30px;
+	padding-left: 30px; 
+}
+/*end css cho phần giữa*/
+/*css cho phần thanh bên phải*/
+#nav_right{
+	padding-bottom: 100020px;
+	margin-bottom: -100000px;
+	float: left;
+	width: 250px;
+	padding-right: 15px;
+	padding-left: 15px; 
+	padding-top: 40px;
+	background: #dff134;
+}
+#nav_right ul{
+	list-style: none; /* bỏ các dấu chấm tròn bên trước*/
+}
+#nav_right ul a{
+	text-decoration: none; /* bỏ gạch dưới chân*/
+}
+/*end css cho thah bên phải*/
+
+/*css cho nút bấm */
+.border_btn{
+	background: #3883de;
+	border-radius: 10px;
+	padding: 5px;
+	color: white;
+}
+
+/*end css cho nút bấm */
+
+/*css cho các ô nhập thông tin*/
+.input_tieude_infomation{
+    font-size: 15px;
+    padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	background: Moccasin;
+	border-radius: 5px;
+}
+/*end css cho các ô nhập thông tin*/
+
+/*css cho phần footer*/
+#footer{
+	width: 100%;
+	clear: left;
+	text-align: center;
+	padding: 10px 0;
+	background: #32ab45;
+}
+/*end css footer*/
