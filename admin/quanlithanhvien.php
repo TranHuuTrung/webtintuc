@@ -28,7 +28,7 @@ session_start();
 	<!-- phần main -->
 	<div id="main_content">
 		<a href="themthanhvien.php">Thêm thành viên mới</a>
-		<table  border="1px" align="center">
+		<table  border="1px" style="margin-left : 300px;">
 			<caption><p>Quản Lí Thành Viên</p></caption>
 			<tr>
 				<th>ID</th>
@@ -38,7 +38,9 @@ session_start();
 				<th>Chỉnh sửa</th>
 			</tr>
 			<?php
-               //vòng lặp để lấy ra thông tin các thành viên
+			   //vòng lặp để lấy ra thông tin các thành viên
+			   //mysqli_fetch_assoc() dùng các tên của trường để truy xuất còn aray dùng chỉ số 0,1, ....
+
 			    $i = 1 ;
 			   while ($data = mysqli_fetch_array($query)) {
 			   	    $id = $data['id'];
@@ -60,6 +62,13 @@ session_start();
 			?>
 		
 		</table>
+		<!-- giải phóng biến kết nối -->
+		<?php
+		//    giải phóng các tập bản ghi
+			mysqli_free_result($query); 
+			//giải phóng biến connect
+			mysqli_close($connect); 
+		?>
     </div>
 <?php include("includes/nav_right_in_admin.php"); ?>
 <?php include("includes/footer.php"); ?>

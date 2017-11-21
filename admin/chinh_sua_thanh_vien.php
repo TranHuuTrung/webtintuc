@@ -21,7 +21,7 @@
 		header('Location: quanlithanhvien.php');
 	}
 
-
+  //get id từ trang quản lí thành viên 
      $id = -1;
      if (isset($_GET['id'])) {
      	$id = $_GET['id'];

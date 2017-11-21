@@ -3,7 +3,7 @@
 
 <div id="wraper_dangki_dangnhap">
 	<form method="POST" action="dangki.php">
-		<table align="center" id="table_dangki">
+		<table style="margin-left : 300px; padding-top: 100px;">
 			<tr>
 				<td><h3>Form đăng kí</h3></td>
 			</tr>	
@@ -13,7 +13,7 @@
 			</tr>
 			<tr>
 				<td><p>Password</p> </td>
-				<td><input  class="input_infomation" type="password" id="password" name="password" size="31"></td>
+				<td><input  class="input_infomation" type="password" id="password" name="password" size="30"></td>
 			</tr>
 			<tr>
 				<td><p>Full Name</p></td>
@@ -56,13 +56,15 @@
 		    //thực hiện kết nối câu query với database với biến $connect lấy từ file connection.php 
 			mysqli_query($connect, $sql);
 
-
 		   //đăng kí xong thì chuyển sang trang mới
 			header('Location: index.php');
+		
+			
 			echo "<p style='color: blue;' >Chúc mừng bạn đã đăng kí thành công!</p>";
 		}
 
 	 }
 	?>
+	      
 </div>
 <?php include "includes/footer.php" ?>

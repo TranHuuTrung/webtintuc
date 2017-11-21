@@ -6,7 +6,7 @@
 	<title>Website Tin Tức</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href=" styles/css/main.css" />
-	
+	<link rel="stylesheet" type="text/css" href=" styles/css/form_dangki_dangnhap.css" />
 	<script src="http://localhost/webtintuc/admin/ckeditor/ckeditor.js"></script>
 </head>
 <body>

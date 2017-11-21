@@ -10,13 +10,13 @@ session_start();
 	<div id="main_content">
 		<!-- <?php var_dump($_SESSION)?> -->
 		<form method="POST" action="thembaiviet_ck.php">
-			<table>
+			<table style="margin-left : 50px;">
 				<tr>
 					<td colspan="3"><h3>Thêm bài viết mới </h3></td>
 				</tr>
 				<tr>
 					<td><p>Tiêu đề : </p></td>
-					<td><input type="text" id="title" name="title" class="input_tieude_infomation" size="50"></td>
+					<td><input type="text" id="title" name="title" class="input_tieude_infomation" size="80"></td>
 				</tr>
 				<tr>
 					<td><p>Nội dung : </p></td>

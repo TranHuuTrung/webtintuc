@@ -5,25 +5,42 @@ session_start();
 <?php include "includes/header.php" ?>
 
 <div id="wraper_dangki_dangnhap">
-  <form method="POST" action="dangnhap.php">
-    <table align="center" id="table_dangnhap">
+  <form method="POST" action="dangnhap.php" id="formdangnhap">
+    <table style="margin-left : 300px; padding-top: 100px;" >
       <tr>
          <td><h3>Đăng nhập</h3></td>
       </tr>
       <tr>
         <td><p>Username : </p></td>
-        <td><input type="text" name="username" class="input_infomation" size="30" ></td>
+        <td><input type="text" name="username" id="username" class="input_infomation" size="30" ></td>
       </tr>
       <tr>
         <td><p>Password :</p></td>
-        <td><input class="input_infomation" type="password" name="password" size="31"></td>
+        <td><input class="input_infomation" type="password" id="password" name="password" size="30"></td>
       </tr>
       <tr>
         <td><a href="./index.php">Trở lại trang chủ</a></td>
-        <td colspan="3" align="center"><input type="submit" name="btn_dangnhap" class="border_btn" value="Đăng nhập"></td>
+        <td colspan="3" align="center"><input type="submit" onClick="check()" name="btn_dangnhap" class="border_btn" value="Đăng nhập"></td>
       </tr>
     </table>
   </form>
+  <!-- nhúng javascript vào để kiểm tra người dùng đã nhập user và password chưa -->
+  <script language="javascript">
+        function check(){
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          if(username == "")
+          {
+            alert("Nhập username vào !");
+            document.getElementById("username").focus();
+          }else if(password == ""){
+            alert("Nhập password vào !");
+          }else{
+
+          }
+        }
+  </script>
+  
   <?php 
    //connect đến database 
   require_once("includes/conection.php");
@@ -41,12 +58,13 @@ session_start();
         $password = strip_tags($password);
         $password = addslashes($password);
 
-        if($username ==""){
-          echo "<p style='color: red;' >Bạn phải nhập Username vào!</p>";
-        }elseif ($password=="") {
-          echo "<p style='color: red;' >Bạn phải nhập password vào!</p>";
-        }else{
+        // if($username ==""){
+        //   echo "<p style='color: red;' >Bạn phải nhập Username vào!</p>";
+        // }elseif ($password=="") {
+        //   echo "<p style='color: red;' >Bạn phải nhập password vào!</p>";
+        // }else{
           //thực hiện 1 câu queeery 
+          
           $sql = "SELECT * FROM user WHERE username = '$username' and password = '$password'";
           //coonect dâtbsse
           $query = mysqli_query($connect, $sql);
@@ -70,7 +88,7 @@ session_start();
            header('Location: ./admin/main_of_admin.php');  
          }
 
-       }
+      //  }
 
      }
 
