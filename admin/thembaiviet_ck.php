@@ -8,7 +8,7 @@ session_start();
 <div id="wrapper_them_bai_viet">
 	<!-- phần main -->
 	<div id="main_content">
-		<?php var_dump($_SESSION)?>
+		<!-- <?php var_dump($_SESSION)?> -->
 		<form method="POST" action="thembaiviet_ck.php">
 			<table>
 				<tr>
@@ -29,7 +29,7 @@ session_start();
 
 		</form>
 		<script>
-	           //thay thế textare
+	           //thay thế textarea làm cho khung thêm nội dung đẹp hơn
 	           CKEDITOR.replace( 'post_content' );
         </script>
         <?php
@@ -57,18 +57,16 @@ if (isset($_POST["btn_dangbai"])) {
 	}elseif ($content =="") {
 		echo "<p style='color:red;'>Bạn phải tạo nội dung cho bài viết</p>";
 	}else{
+
 		$permission = $_SESSION["permission"];
 
+		//thực hiện câu sql để thêm bài viết vào bảng database pots
 		$sql = "INSERT INTO posts(title, content, user_id, createdate, updatedate)
 		VALUES('$title', '$content', '$user_id', now(), now()) ";
 	    //thực thi câu lệnh sql
 		mysqli_query($connect, $sql);
 		echo "<p style='color:green;'>Bạn đã thêm bài viết thành công!</p>";
-		 echo $permission;
-
-  //  	   //kiểm tra có phải là admin hay không nếu trả về lớn hơn 0 là admin
   //  	   if ($permission == '1') {
-  //   	 //thực hiện câu sql để thêm bài viết vào bảng database pots
 		// $sql = "INSERT INTO posts(title, content, user_id, createdate, updatedate)
 		// VALUES('$title', '$content', '$user_id', now(), now()) ";
 	 //    //thực thi câu lệnh sql

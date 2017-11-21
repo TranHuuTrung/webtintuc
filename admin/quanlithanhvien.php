@@ -28,7 +28,7 @@ session_start();
 	<!-- phần main -->
 	<div id="main_content">
 		<a href="themthanhvien.php">Thêm thành viên mới</a>
-		<table border="1px" align="center">
+		<table  border="1px" align="center">
 			<caption><p>Quản Lí Thành Viên</p></caption>
 			<tr>
 				<th>ID</th>

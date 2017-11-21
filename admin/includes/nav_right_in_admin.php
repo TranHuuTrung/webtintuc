@@ -5,7 +5,7 @@
    <li><a href="http://localhost/webtintuc/admin/main_of_admin.php">Trang Chủ</a></li>
    <li><a href="http://localhost/webtintuc/admin/thembaiviet_ck.php">Thêm bài viết</a></li>
    <li><a href="http://localhost/webtintuc/admin/quanlithanhvien.php">Quản lí thành viên</a></li>
-   <li><a href="http://localhost/webtintuc/dangxuat.php">Đăng xuất</a></li>
+   <li><a href="http://localhost/webtintuc/admin/dangxuat.php">Đăng xuất</a></li>
  </ul>
 
  <h3>Right navigation</h3>
