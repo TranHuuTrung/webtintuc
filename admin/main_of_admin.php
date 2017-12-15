@@ -24,10 +24,15 @@ $query = mysqli_query($connect, $sql);
 						echo "</tr>";
 						$i = 0;
 					}
+					$mang = explode(" ", $data["content"]);
+					$str = "";
+					for($j=0; $j<=5; $j++){
+						$str=$str." ".$mang[$j];
+					}
 					?>
 					<td>
 						<b style="color: blue; font-size: 18px;"><?php echo $data["title"]; ?></b>
-						<p><?php echo substr($data["content"], 0, 130)."...."; ?></p>
+						<p><?php echo $str."...."; ?></p>
 						<a href="display.php?id=<?php echo $data['id']; ?>">Đọc tiếp</a>
 					</td>
 					<?php 
